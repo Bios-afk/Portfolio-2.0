@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --color-fond: #080a09;
+    --color-encre: #0a0a0a;
+    --color-jade: #1fb890;
+    --color-jade-clair: #4fd6b4;
+    --color-blanc: #ffffff;
+    --color-gris-texte: #9a9a9a;
+    --color-gris-legende: #8a938f;
+
+    --font-sans: 'Geist Variable', sans-serif;
+    --font-mono: 'Geist Mono Variable', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-fond font-sans text-blanc;
+}
+
+.section-grid {
+    position: relative;
+    isolation: isolate;
+}
+
+.section-grid::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(to right, rgb(31 184 144 / 10%) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(31 184 144 / 10%) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(
+        ellipse 80% 60% at 50% 50%,
+        black 40%,
+        transparent 85%
+    );
+    -webkit-mask-image: radial-gradient(
+        ellipse 80% 60% at 50% 50%,
+        black 40%,
+        transparent 85%
+    );
+}
+
+@media (max-width: 640px) {
+    .section-grid::before {
+        background-size: 96px 96px;
+    }
+}
+:focus-visible {
+    outline: 2px solid var(--color-jade);
+    outline-offset: 2px;
+}
