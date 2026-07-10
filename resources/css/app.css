@@ -12,6 +12,14 @@
     --color-gris-texte: #9a9a9a;
     --color-gris-legende: #8a938f;
 
+    --color-bg-alt: #0b0e0d;
+    --color-card: #0e1211;
+    --color-border-subtle: rgb(255 255 255 / 7%);
+    --color-border-alt: rgb(255 255 255 / 7%);
+    --color-border-strong: rgb(255 255 255 / 16%);
+    --color-gray-text: #9a9a9a;
+    --color-gray-caption: #8a938f;
+
     --font-sans: 'Geist Variable', sans-serif;
     --font-mono: 'Geist Mono Variable', monospace;
 }
@@ -36,8 +44,10 @@ body {
     z-index: -1;
     pointer-events: none;
     background-image:
-        linear-gradient(to right, rgb(31 184 144 / 10%) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(31 184 144 / 10%) 1px, transparent 1px);
+        /* linear-gradient(to right, rgb(31 184 144 / 10%) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(31 184 144 / 10%) 1px, transparent 1px), */
+        linear-gradient(to right, #ffffff10 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff10 1px, transparent 1px);
     background-size: 64px 64px;
     mask-image: radial-gradient(
         ellipse 80% 60% at 50% 50%,

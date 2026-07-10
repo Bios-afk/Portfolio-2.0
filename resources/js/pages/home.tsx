@@ -1,6 +1,7 @@
 import { Head } from '@inertiajs/react';
 import MainLayout from '@/components/layouts/MainLayout';
 import Hero from '@/components/Hero';
+import ServicesSection from '@/components/ServicesSection';
 
 interface HomeProps {
     message: string;
@@ -11,6 +12,7 @@ export default function Home({ message }: HomeProps) {
         <MainLayout>
             <Head title="Home" />
             <Hero />
+            <ServicesSection />
         </MainLayout>
     );
 }
