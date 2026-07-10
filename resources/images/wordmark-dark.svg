@@ -1,0 +1,7 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="300" fill="#080A09"></rect>
+  <rect x="60" y="90" width="120" height="120" rx="18" fill="#1FB890"></rect>
+  <text x="120" y="172" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="52" letter-spacing="-2" fill="#06110D" text-anchor="middle">FK</text>
+  <text x="210" y="150" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="52" letter-spacing="-1" fill="#FFFFFF">Félix Korbendau</text>
+  <text x="210" y="196" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="22" letter-spacing="2" fill="#8A938F">DÉVELOPPEUR FULL-STACK</text>
+</svg>
