@@ -1,5 +1,6 @@
 import React from 'react';
 import Wordmark from '@/components/ui/Brand/Wordmark';
+import { Button } from '@/components/ui/Button';
 
 const LINKS = [
     { href: '#services', label: 'Services' },
@@ -10,10 +11,10 @@ const LINKS = [
 
 const Header = () => {
     return (
-        <header className="sticky top-0 z-20 bg-[rgba(8,10,9,0.85)] backdrop-blur-[10px] border-b border-border-subtle">
-            <div className="flex items-center justify-between py-4.5 px-[clamp(20px,5vw,64px)]">
+        <header className="border-border-subtle sticky top-0 z-20 border-b bg-[rgba(8,10,9,0.85)] backdrop-blur-[10px]">
+            <div className="flex items-center justify-between px-[clamp(20px,5vw,64px)] py-4.5">
                 <Wordmark compact />
-                <nav className="hidden sm:flex items-center gap-7 font-mono text-[13px] tracking-widest text-gray-text">
+                <nav className="text-gray-text hidden items-center gap-7 font-mono text-[13px] tracking-widest sm:flex">
                     {LINKS.map((l) => (
                         <a
                             key={l.href}
@@ -23,7 +24,9 @@ const Header = () => {
                             {l.label}
                         </a>
                     ))}
-                    {/* <div>Me contacter</div> */}
+                    <Button variant="secondary" size="sm" href="#contact">
+                        Me contacter
+                    </Button>
                 </nav>
             </div>
         </header>
