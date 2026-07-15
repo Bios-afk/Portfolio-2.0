@@ -3,18 +3,19 @@ import MainLayout from '@/components/layouts/MainLayout';
 import Hero from '@/components/Hero';
 import ServicesSection from '@/components/ServicesSection';
 import Projects from '@/components/Projects';
+import type { Project } from '@/types';
 
 interface HomeProps {
-    message: string;
+    projects: Project[];
 }
 
-export default function Home({ message }: HomeProps) {
+export default function Home({ projects }: HomeProps) {
     return (
         <MainLayout>
             <Head title="Home" />
             <Hero />
             <ServicesSection />
-            <Projects />
+            <Projects projects={projects} />
         </MainLayout>
     );
 }

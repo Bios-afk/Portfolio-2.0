@@ -23,7 +23,7 @@ export default function Card({
     return (
         <div
             id={id}
-            className={`bg-card border border-border-subtle rounded-[14px] overflow-hidden ${padCls} ${hoverCls}`}
+            className={`bg-card border border-border-subtle rounded-[14px] overflow-hidden ${padCls} ${hoverCls} justify-between flex flex-col`}
         >
             {children}
         </div>

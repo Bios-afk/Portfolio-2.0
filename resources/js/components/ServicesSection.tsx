@@ -3,7 +3,6 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import Card from '@/components/ui/Card';
 import { Code, LayoutDashboard, Users, type LucideIcon } from 'lucide-react';
 
-
 interface Service {
     id: string;
     icon: LucideIcon;
@@ -35,7 +34,7 @@ export default function ServicesSection() {
     return (
         <section
             id="services"
-            className="bg-bg-alt relative overflow-hidden border-t border-jade/13 px-[clamp(20px,5vw,64px)] py-16"
+            className="relative overflow-hidden border-t border-jade/13 bg-bg-alt px-[clamp(20px,5vw,64px)] py-16"
         >
             <div className="relative">
                 <SectionLabel index={1}>Services</SectionLabel>
@@ -44,9 +43,15 @@ export default function ServicesSection() {
                         const ServiceIcon = s.icon;
                         return (
                             <Card key={s.id} id={s.id} hoverable padding="lg">
-                                <ServiceIcon className="h-5.5 w-5.5 text-jade" />
-                                <h3 className="mt-4.5 mb-2 font-sans text-lg leading-[1.3] font-medium text-white">{s.title}</h3>
-                                <p className="font-sans text-sm leading-normal text-gray-text">{s.desc}</p>
+                                <div>
+                                    <ServiceIcon className="h-5.5 w-5.5 text-jade" />
+                                    <h3 className="mt-4.5 mb-2 font-sans text-lg leading-[1.3] font-medium text-white">
+                                        {s.title}
+                                    </h3>
+                                </div>
+                                <p className="font-sans text-sm leading-normal text-gray-text">
+                                    {s.desc}
+                                </p>
                             </Card>
                         );
                     })}
