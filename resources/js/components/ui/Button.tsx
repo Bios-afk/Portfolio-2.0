@@ -5,7 +5,7 @@ interface ButtonProps {
     variant?: 'primary' | 'secondary' | 'ghost';
     size?: 'sm' | 'md';
     href?: string;
-    onClick?: () => void;
+    onClick?: (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => void;
     disabled?: boolean;
     loading?: boolean;
     type?: 'button' | 'submit' | 'reset';

@@ -2,6 +2,11 @@ import { Tag } from '@/components/ui/Tag';
 import { Button } from '@/components/ui/Button';
 
 export default function Hero() {
+    function scrollToServices(event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) {
+        event.preventDefault();
+        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
     return (
         <section className="section-grid relative overflow-hidden px-[clamp(20px,5vw,64px)] pt-[clamp(48px,10vw,120px)] pb-20">
             <div className="relative max-w-225">
@@ -18,7 +23,7 @@ export default function Hero() {
                     digitaux solides et évolutifs.
                 </h1>
                 <p className="mb-8 max-w-140 font-sans text-lg leading-[1.6] text-gris-texte">
-                    Développeur web full-stack basé à Bordeaux — applications
+                    Développeur web full-stack basé à Bordeaux, applications
                     sur mesure et sites vitrines, construits avec PHP / Laravel
                     / React.
                 </p>
@@ -31,7 +36,7 @@ export default function Hero() {
                     <Button variant="primary" href="#contact">
                         Démarrer un projet
                     </Button>
-                    <Button variant="ghost" href="#services">
+                    <Button variant="ghost" href="#services" onClick={scrollToServices}>
                         Voir les services
                     </Button>
                 </div>
