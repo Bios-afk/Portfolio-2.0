@@ -46,8 +46,8 @@ body {
     background-image:
         /* linear-gradient(to right, rgb(31 184 144 / 10%) 1px, transparent 1px),
         linear-gradient(to bottom, rgb(31 184 144 / 10%) 1px, transparent 1px), */
-        linear-gradient(to right, #ffffff10 1px, transparent 1px),
-        linear-gradient(to bottom, #ffffff10 1px, transparent 1px);
+        linear-gradient(to right, #ffffff1e 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff1e 1px, transparent 1px);
     background-size: 64px 64px;
     mask-image: radial-gradient(
         ellipse 80% 60% at 50% 50%,

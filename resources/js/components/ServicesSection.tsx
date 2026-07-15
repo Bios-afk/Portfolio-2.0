@@ -40,16 +40,16 @@ export default function ServicesSection() {
             <div className="relative">
                 <SectionLabel index={1}>Services</SectionLabel>
                 <div className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
-                    {SERVICES.map((s) => (
-                        <Card
-                            key={s.id}
-                            id={s.id}
-                            icon={s.icon}
-                            title={s.title}
-                            desc={s.desc}
-                            hoverable
-                        />
-                    ))}
+                    {SERVICES.map((s) => {
+                        const ServiceIcon = s.icon;
+                        return (
+                            <Card key={s.id} id={s.id} hoverable padding="lg">
+                                <ServiceIcon className="h-5.5 w-5.5 text-jade" />
+                                <h3 className="mt-4.5 mb-2 font-sans text-lg leading-[1.3] font-medium text-white">{s.title}</h3>
+                                <p className="font-sans text-sm leading-normal text-gray-text">{s.desc}</p>
+                            </Card>
+                        );
+                    })}
                 </div>
             </div>
         </section>
