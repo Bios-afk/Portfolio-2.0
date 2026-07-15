@@ -3,6 +3,7 @@ import MainLayout from '@/components/layouts/MainLayout';
 import Hero from '@/components/Hero';
 import ServicesSection from '@/components/ServicesSection';
 import Projects from '@/components/Projects';
+import Stacks from '@/components/Stack';
 import type { Project } from '@/types';
 
 interface HomeProps {
@@ -16,6 +17,7 @@ export default function Home({ projects }: HomeProps) {
             <Hero />
             <ServicesSection />
             <Projects projects={projects} />
+            <Stacks />
         </MainLayout>
     );
 }
