@@ -9,7 +9,7 @@ const SECTIONS = [
             'Le site felixkorbendau.fr est édité par :',
             'Félix Korbendau, exerçant sous le nom commercial Kodenet Entreprise Individuelle (EI) SIRET : 98932615200018 Code APE : 6201Z',
             'Programmation informatique Siège social : 2 Chemin de Darrigaut, 33670 Sadirac, France TVA non applicable',
-            'article 293 B du Code général des impôts Email : contact@felixkorbendau.fr',
+            'article 293 B du Code général des impôts Email : felix.kodenet@gmail.com',
             'Directeur de la publication : Félix Korbendau.',
         ],
     },
@@ -18,7 +18,6 @@ const SECTIONS = [
         body: [
             'Hébergement applicatif : Laravel Cloud, service opéré par Laravel Holdings Inc. Infrastructure sous-jacente : Amazon Web Services (AWS). Informations complètes : https://cloud.laravel.com/legal/terms',
             'Nom de domaine enregistré auprès de : OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.',
-            "Note : vérifie l'adresse exacte de Laravel Holdings Inc. directement sur leurs conditions d'utilisation avant publication — je n'ai pas trouvé d'adresse postale officielle publiée pour cette entité, seulement sa forme juridique (US LLC).",
         ],
     },
     {
