@@ -4,6 +4,7 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -28,6 +29,9 @@ class ContactMessageReceived extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
+            replyTo: [
+                new Address($this->email, $this->name),
+            ],
             subject: 'Message de contact reçu',
         );
     }
@@ -39,6 +43,7 @@ class ContactMessageReceived extends Mailable
     {
         return new Content(
             view: 'mail.contact-message',
+            text: 'mail.contact-message-text',
             with: [
                 'body' => $this->message,
             ],
