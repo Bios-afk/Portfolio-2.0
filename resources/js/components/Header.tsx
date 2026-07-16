@@ -10,7 +10,9 @@ const LINKS = [
 
 const Header = () => {
     function scrollToSection(href: string) {
-        return (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+        return (
+            event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
+        ) => {
             event.preventDefault();
             document
                 .getElementById(href.replace('#', ''))
@@ -32,7 +34,12 @@ const Header = () => {
                             {l.label}
                         </a>
                     ))}
-                    <Button variant="secondary" size="sm" href="#contact" onClick={scrollToSection('#contact')}>
+                    <Button
+                        variant="secondary"
+                        size="sm"
+                        href="#contact"
+                        onClick={scrollToSection('#contact')}
+                    >
                         Me contacter
                     </Button>
                 </nav>
