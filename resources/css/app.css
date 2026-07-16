@@ -19,6 +19,7 @@
     --color-border-strong: rgb(255 255 255 / 16%);
     --color-gray-text: #9a9a9a;
     --color-gray-caption: #8a938f;
+    --color-error: #E2724A;
 
     --font-sans: 'Geist Variable', sans-serif;
     --font-mono: 'Geist Mono Variable', monospace;

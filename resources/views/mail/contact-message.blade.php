@@ -109,7 +109,7 @@
                                             <tr>
                                                 <td
                                                     style="padding:16px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:14px; line-height:1.6; color:#c9cdcb;">
-                                                    {!! nl2br(e($message)) !!}
+                                                    {!! nl2br(e($body)) !!}
                                                 </td>
                                             </tr>
                                         </table>
