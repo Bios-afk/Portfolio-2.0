@@ -12,3 +12,7 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::fallback(function () {
     return Inertia::render('not-found');
 });
+
+Route::get('/mentions-legales', function () {
+    return Inertia::render('mentions-legales');
+})->name('mentions-legales');

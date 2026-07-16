@@ -11,8 +11,14 @@ const Footer = () => {
                     réservés
                 </span>
             </div>
-            <div>
-                {/* <a href=''>Mentions légales</a> */}
+            <div className="relative flex items-center gap-5">
+                <a
+                    href="/mentions-legales"
+                    className="text-inherit no-underline transition-colors duration-120 hover:text-white"
+                >
+                    Mentions légales
+                </a>
+                <span>·</span>
                 <span>Charte de marque · v1</span>
             </div>
         </footer>
