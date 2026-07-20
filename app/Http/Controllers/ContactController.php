@@ -19,7 +19,6 @@ class ContactController extends Controller
             message: $validatedData['message'],
         ));
 
-
         return back();
     }
 }

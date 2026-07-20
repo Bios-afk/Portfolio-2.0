@@ -3,7 +3,7 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import { useForm } from '@inertiajs/react';
 import { Button } from '@/components/ui/Button';
 import { ContactRow } from '@/components/ui/ContactRow';
-import { Mail, Globe, Link2, Code2, MapPin } from 'lucide-react';
+import { Mail, Globe, Link2, Code2, MapPin, Check } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
 
 export default function ContactForm() {
@@ -24,6 +24,7 @@ export default function ContactForm() {
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         post('/contact', {
+            preserveScroll: true,
             onSuccess: () => reset(),
         });
     }
@@ -72,25 +73,19 @@ export default function ContactForm() {
                                 type="submit"
                                 variant="primary"
                                 loading={processing === true}
+                                disabled={recentlySuccessful}
                             >
-                                {processing === true
-                                    ? 'Envoi en cours…'
-                                    : 'Envoyer'}
+                                {recentlySuccessful ? (
+                                    <>
+                                        <Check className="h-4 w-4" />
+                                        Message envoyé
+                                    </>
+                                ) : processing === true ? (
+                                    'Envoi en cours…'
+                                ) : (
+                                    'Envoyer'
+                                )}
                             </Button>
-                            <span
-                                role="status"
-                                aria-live="polite"
-                                className={`inline-flex items-center gap-2 font-mono text-xs text-jade-clair transition-opacity duration-200 ${
-                                    recentlySuccessful
-                                        ? 'opacity-100'
-                                        : 'opacity-0'
-                                }`}
-                            >
-                                <span className="relative flex size-2 items-center justify-center">
-                                    <span className="absolute inline-flex h-2 w-2 rounded-full bg-jade" />
-                                </span>
-                                Message envoyé
-                            </span>
                         </div>
                     </form>
                     <div className="flex flex-col gap-4">
