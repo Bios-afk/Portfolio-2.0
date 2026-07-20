@@ -24,7 +24,7 @@ interface WordmarkProps {
 
 const Wordmark = ({ compact = false }: WordmarkProps) => {
     return (
-        <div className="flex items-center gap-3.5 font-sans">
+        <a className="flex items-center gap-3.5 font-sans" href="/">
             <Monogram size={compact ? 32 : 44} />
             <div className="flex flex-col gap-0.5">
                 <span
@@ -38,7 +38,7 @@ const Wordmark = ({ compact = false }: WordmarkProps) => {
                     </span>
                 )}
             </div>
-        </div>
+        </a>
     );
 };
 

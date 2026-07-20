@@ -28,7 +28,7 @@ const Header = () => {
                         <a
                             key={l.href}
                             href={l.href}
-                            className="text-inherit no-underline"
+                            className="text-inherit no-underline transition-colors duration-120 hover:text-white"
                             onClick={scrollToSection(l.href)}
                         >
                             {l.label}
