@@ -11,6 +11,9 @@ class Stack extends Model
 
     protected $table = 'stacks';
 
+    /**
+     * @return BelongsToMany<Project, $this>
+     */
     public function projects(): BelongsToMany
     {
         return $this->belongsToMany(Project::class);

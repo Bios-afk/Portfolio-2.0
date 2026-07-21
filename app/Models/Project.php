@@ -11,15 +11,21 @@ class Project extends Model
 {
     protected $fillable = ['title', 'description', 'image', 'slug'];
     protected $appends = ['image_url'];
+    /**
+     * @return BelongsToMany<Stack, $this>
+     */
     public function stacks(): BelongsToMany
     {
         return $this->belongsToMany(Stack::class);
     }
 
+    /**
+     * @return Attribute<string|null, never>
+     */
     protected function imageUrl(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->image ? Storage::url($this->image) : null,
+            get: fn() => $this->image ? Storage::url($this->image) : null,
         );
     }
 }
