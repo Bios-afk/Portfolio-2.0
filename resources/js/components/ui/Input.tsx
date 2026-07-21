@@ -48,7 +48,7 @@ export function Input({
                 defaultValue={defaultValue}
                 onChange={onChange}
                 aria-invalid={error ? 'true' : undefined}
-                className={`rounded-md border-0 border-b bg-card ${borderCls} resize-y px-3 py-2.5 font-sans text-base leading-[1.6] text-white placeholder:text-gris-texte transition-colors duration-120 outline-none`}
+                className={`rounded-md border-0 border-b bg-card ${borderCls} resize-y px-3 py-2.5 font-sans text-base leading-[1.6] text-white transition-colors duration-120 outline-none placeholder:text-gris-texte`}
             />
             {error && (
                 <span role="alert" className="font-mono text-xs text-error">

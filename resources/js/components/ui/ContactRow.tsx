@@ -20,7 +20,7 @@ export function ContactRow({ icon, children, href }: ContactRowProps) {
     return (
         <a
             href={href}
-            className="hover:text-jade-clair text-inherit no-underline transition-colors duration-120"
+            className="text-inherit no-underline transition-colors duration-120 hover:text-jade-clair"
         >
             {content}
         </a>

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 interface CardProps {
     id: string;
     padding?: 'sm' | 'md' | 'lg';
@@ -23,7 +22,7 @@ export default function Card({
     return (
         <div
             id={id}
-            className={`bg-card border border-border-subtle rounded-[14px] overflow-hidden ${padCls} ${hoverCls} justify-between flex flex-col`}
+            className={`overflow-hidden rounded-[14px] border border-border-subtle bg-card ${padCls} ${hoverCls} flex flex-col justify-between`}
         >
             {children}
         </div>

@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Project;
 use Inertia\Inertia;
 use Inertia\Response;
-
-use App\Models\Project;
 
 class PageController extends Controller
 {

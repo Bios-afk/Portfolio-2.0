@@ -1,5 +1,5 @@
-import { Code, LayoutDashboard, Users  } from 'lucide-react';
-import type {LucideIcon} from 'lucide-react';
+import { Code, LayoutDashboard, Users } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import React from 'react';
 import Card from '@/components/ui/Card';
 import SectionLabel from '@/components/ui/SectionLabel';

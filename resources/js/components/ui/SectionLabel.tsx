@@ -7,7 +7,7 @@ interface SectionLabelProps {
 
 export default function SectionLabel({ index, children }: SectionLabelProps) {
     return (
-        <div className="text-gray-caption flex items-center gap-2.5 font-mono text-xs font-medium tracking-[0.14em] uppercase">
+        <div className="flex items-center gap-2.5 font-mono text-xs font-medium tracking-[0.14em] text-gray-caption uppercase">
             <span className="h-2 w-2 animate-pulse rounded-full bg-jade" />
             {index != null && (
                 <span className="text-jade">

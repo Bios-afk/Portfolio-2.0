@@ -104,7 +104,10 @@ export default function ContactForm() {
                         >
                             felixkorbendau.fr
                         </ContactRow>
-                        <ContactRow icon={Link2} href="https://www.linkedin.com/in/felix-korbendau-713a63217/">
+                        <ContactRow
+                            icon={Link2}
+                            href="https://www.linkedin.com/in/felix-korbendau-713a63217/"
+                        >
                             linkedin.com/in/felix-korbendau
                         </ContactRow>
                         <ContactRow

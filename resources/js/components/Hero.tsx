@@ -2,16 +2,20 @@ import { Button } from '@/components/ui/Button';
 import { Tag } from '@/components/ui/Tag';
 
 export default function Hero() {
-    function scrollToServices(event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) {
+    function scrollToServices(
+        event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
+    ) {
         event.preventDefault();
-        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        document
+            .getElementById('services')
+            ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     return (
         <section className="section-grid relative overflow-hidden px-[clamp(20px,5vw,64px)] pt-[clamp(48px,10vw,120px)] pb-20">
             <div className="relative max-w-225">
                 <div className="mb-5 inline-flex items-center gap-2 font-mono text-xs text-gris-texte">
-                    <span className="relative flex size-3 justify-center items-center">
+                    <span className="relative flex size-3 items-center justify-center">
                         <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-jade opacity-75"></span>
                         <span className="relative inline-flex size-2 rounded-full bg-jade"></span>
                     </span>
@@ -23,9 +27,9 @@ export default function Hero() {
                     digitaux solides et évolutifs.
                 </h1>
                 <p className="mb-8 max-w-140 font-sans text-lg leading-[1.6] text-gris-texte">
-                    Développeur web full-stack basé à Bordeaux, applications
-                    sur mesure et sites vitrines, construits avec PHP / Laravel
-                    / React.
+                    Développeur web full-stack basé à Bordeaux, applications sur
+                    mesure et sites vitrines, construits avec PHP / Laravel /
+                    React.
                 </p>
                 <div className="mb-8 flex flex-wrap gap-2.5">
                     <Tag>PHP</Tag>
@@ -36,7 +40,11 @@ export default function Hero() {
                     <Button variant="primary" href="#contact">
                         Démarrer un projet
                     </Button>
-                    <Button variant="ghost" href="#services" onClick={scrollToServices}>
+                    <Button
+                        variant="ghost"
+                        href="#services"
+                        onClick={scrollToServices}
+                    >
                         Voir les services
                     </Button>
                 </div>

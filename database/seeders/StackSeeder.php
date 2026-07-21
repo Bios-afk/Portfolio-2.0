@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Stack;
 use Illuminate\Database\Seeder;
 
 class StackSeeder extends Seeder
@@ -20,7 +20,7 @@ class StackSeeder extends Seeder
         ];
 
         foreach ($stacks as $stack) {
-            \App\Models\Stack::firstOrCreate(['name' => $stack['name']]);
+            Stack::firstOrCreate(['name' => $stack['name']]);
         }
     }
 }
