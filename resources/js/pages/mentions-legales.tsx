@@ -1,5 +1,5 @@
-import MainLayout from '@/components/layouts/MainLayout';
 import { Head } from '@inertiajs/react';
+import MainLayout from '@/components/layouts/MainLayout';
 import SectionLabel from '@/components/ui/SectionLabel';
 
 const SECTIONS = [

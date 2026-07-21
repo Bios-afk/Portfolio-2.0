@@ -1,7 +1,7 @@
-import React from 'react';
-import SectionLabel from '@/components/ui/SectionLabel';
-import Card from '@/components/ui/Card';
 import { ArrowUpRight } from 'lucide-react';
+import React from 'react';
+import Card from '@/components/ui/Card';
+import SectionLabel from '@/components/ui/SectionLabel';
 import { Tag } from '@/components/ui/Tag';
 import type { Project } from '@/types';
 

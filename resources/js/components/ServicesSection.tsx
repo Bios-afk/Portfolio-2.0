@@ -1,7 +1,8 @@
+import { Code, LayoutDashboard, Users  } from 'lucide-react';
+import type {LucideIcon} from 'lucide-react';
 import React from 'react';
-import SectionLabel from '@/components/ui/SectionLabel';
 import Card from '@/components/ui/Card';
-import { Code, LayoutDashboard, Users, type LucideIcon } from 'lucide-react';
+import SectionLabel from '@/components/ui/SectionLabel';
 
 interface Service {
     id: string;
@@ -41,6 +42,7 @@ export default function ServicesSection() {
                 <div className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
                     {SERVICES.map((s) => {
                         const ServiceIcon = s.icon;
+
                         return (
                             <Card key={s.id} id={s.id} hoverable padding="lg">
                                 <div>

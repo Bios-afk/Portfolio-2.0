@@ -1,5 +1,5 @@
+import { Head } from '@inertiajs/react';
 import React from 'react';
-import { Head, Link } from '@inertiajs/react';
 import MainLayout from '@/components/layouts/MainLayout';
 import { Button } from '@/components/ui/Button';
 

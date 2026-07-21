@@ -19,6 +19,7 @@ const Header = () => {
                 ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         };
     }
+
     return (
         <header className="sticky top-0 z-20 border-b border-border-alt bg-[rgba(8,10,9,0.85)] backdrop-blur-[10px]">
             <div className="flex items-center justify-between px-[clamp(20px,5vw,64px)] py-4.5">

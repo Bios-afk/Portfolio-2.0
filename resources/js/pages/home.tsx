@@ -1,10 +1,10 @@
 import { Head } from '@inertiajs/react';
-import MainLayout from '@/components/layouts/MainLayout';
-import Hero from '@/components/Hero';
-import ServicesSection from '@/components/ServicesSection';
-import Projects from '@/components/Projects';
-import Stacks from '@/components/Stack';
 import Form from '@/components/ContactForm';
+import Hero from '@/components/Hero';
+import MainLayout from '@/components/layouts/MainLayout';
+import Projects from '@/components/Projects';
+import ServicesSection from '@/components/ServicesSection';
+import Stacks from '@/components/Stack';
 import type { Project } from '@/types';
 
 interface HomeProps {

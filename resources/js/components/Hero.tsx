@@ -1,5 +1,5 @@
-import { Tag } from '@/components/ui/Tag';
 import { Button } from '@/components/ui/Button';
+import { Tag } from '@/components/ui/Tag';
 
 export default function Hero() {
     function scrollToServices(event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) {

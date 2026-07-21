@@ -1,10 +1,10 @@
-import React from 'react';
-import SectionLabel from '@/components/ui/SectionLabel';
 import { useForm } from '@inertiajs/react';
+import { Mail, Globe, Link2, Code2, MapPin, Check } from 'lucide-react';
+import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { ContactRow } from '@/components/ui/ContactRow';
-import { Mail, Globe, Link2, Code2, MapPin, Check } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
+import SectionLabel from '@/components/ui/SectionLabel';
 
 export default function ContactForm() {
     const {
